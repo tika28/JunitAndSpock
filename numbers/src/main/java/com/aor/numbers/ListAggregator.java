@@ -28,6 +28,10 @@ public class ListAggregator {
         int max = 0;
 
         for (Integer number : list)
+            if (number < max)
+                max = number;
+
+        for (Integer number : list)
             if (number > max)
                 max = number;
 
